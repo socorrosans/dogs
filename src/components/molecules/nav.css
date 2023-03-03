@@ -1,0 +1,15 @@
+.nav-item {
+  display: flex;
+  align-items: center;
+}
+
+.nav-item::after {
+  content: '';
+  display: inline-block;
+  background: url('../../assets/usuario.svg') no-repeat center center;
+  width: 14px;
+  height: 17px;
+  margin-left: 0.5rem;
+  position: relative;
+  top: -2px;
+}

@@ -1,0 +1,13 @@
+.footer {
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 1rem 0 1rem;
+  background-color: #ffbb11;
+}
+
+.copyright {
+  color: #764701;
+  margin-top: 1rem;
+}
