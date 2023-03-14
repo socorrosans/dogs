@@ -1,0 +1,17 @@
+.form-input {
+  display: block;
+  width: 100%;
+  font-size: 1rem;
+  padding: .8rem;
+  background-color: #eeeeee;
+  border: 1px solid #eeeeee;
+  border-radius: .4rem;
+  transition: .2s;
+}
+
+.form-input:focus, .form-input:hover {
+  outline: none;
+  background-color: #ffffff;
+  border: 1px solid #ffbb11;
+  box-shadow: 0 0 0 3px #ffeeaa;
+}

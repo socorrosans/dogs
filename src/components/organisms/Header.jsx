@@ -1,4 +1,4 @@
-import Nav from '../molecules/Nav';
+import {Nav} from '../molecules';
 import './header.css';
 
 export default function Header(){

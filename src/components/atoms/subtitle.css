@@ -1,0 +1,14 @@
+.subtitle {
+  font-family: var(--type-second);
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.subtitle::after {
+  display: block;
+  width: 3rem;
+  height: 0.5rem;
+  content: '';
+  background: #dddddd;
+  border-radius: 0.2rem;
+}

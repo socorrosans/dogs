@@ -1,10 +1,10 @@
-import Logo from '../molecules/Logo';
-import NavItem from '../atoms/NavItem';
+import {Logo} from '../molecules';
+import {NavItem} from '../atoms';
 import './nav.css';
 
 export default function Nav(){
   return(
-    <nav className="h-nav">
+    <nav className="nav">
       <Logo color="#333333"/>
       <NavItem name="Login / Criar"/>
     </nav>

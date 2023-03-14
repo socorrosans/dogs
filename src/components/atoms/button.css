@@ -1,0 +1,16 @@
+.btn {
+  box-sizing: border-box;
+  min-width: 8rem;
+  color: #764701;
+  background-color: #ffbb11;
+  padding: 0.8125rem 1.25rem;
+  border-radius: 0.4rem;
+  border: none;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.btn:focus, .btn:hover {
+  outline: none;
+  box-shadow: 0 0 0 3px #ffeeaa, 0 0 0 4px #ffbb11;
+}

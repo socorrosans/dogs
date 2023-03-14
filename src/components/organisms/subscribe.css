@@ -1,0 +1,43 @@
+.subscribe-container .link-password{
+  padding-block: 0.5rem;
+  margin-bottom: 4rem;
+}
+
+.subscribe-container p {
+  margin-block: 2.1875rem 1.5625rem;
+}
+
+.btn-subscribe {
+  display: inline-block;
+  min-width: 8rem;
+  color: #764701;
+  font-family: var(--type-first);
+  font-size: 1rem;
+  background: #ffbb11;
+  padding: 0.8rem 1.2rem;
+  border-radius: 0.4rem;
+  border: none;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: 0.2s;
+  text-align: center;
+}
+
+.btn-subscribe:hover,
+.btn-subscribe:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px #ffeeaa, 0 0 0 4px #ffbb11;
+}
+
+.link-password {
+  display: inline-block;
+  color: #666666;
+}
+
+.link-password::after {
+  display: block;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: currentColor;
+}
