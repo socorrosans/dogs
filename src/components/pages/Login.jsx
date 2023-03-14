@@ -1,14 +1,12 @@
-import Subscribe from '../organisms/Subscribe';
-import Header from '../organisms/Header';
-import Footer from '../organisms/Footer';
-import Form from '../organisms/Form';
+import {Subscribe, Header, Footer, Form} from '../organisms';
 import './login.css';
 
 export default function Login(){
   return(
     <>
       <Header/>
-        <section>
+        <section className="login-content">
+          <div className="login-banner"></div>
           <div className="login-data">
             <Form/>
             <Subscribe/>
