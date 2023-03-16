@@ -2,4 +2,5 @@
   max-width: 800px;
   padding-inline: 1rem;
   margin-inline: auto;
+  min-height: calc(100vh - 224px);
 }

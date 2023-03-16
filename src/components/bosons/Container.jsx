@@ -2,6 +2,6 @@ import './container.css';
 
 export default function Container(props){
   return (
-    <div className="container-main">{props.children}</div>
+    <main className="container-main">{props.children}</main>
   )
 }
