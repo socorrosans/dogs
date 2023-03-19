@@ -1,13 +1,13 @@
-.subscribe-container .link-password{
+.subscribeContainer .linkPassword{
   padding-block: 0.5rem;
   margin-bottom: 4rem;
 }
 
-.subscribe-container p {
+.subscribeContainer p {
   margin-block: 2.1875rem 1.5625rem;
 }
 
-.btn-subscribe {
+.btnSubscribe {
   display: inline-block;
   min-width: 8rem;
   color: #764701;
@@ -23,18 +23,18 @@
   text-align: center;
 }
 
-.btn-subscribe:hover,
-.btn-subscribe:focus {
+.btnSubscribe:hover,
+.btnSubscribe:focus {
   outline: none;
   box-shadow: 0 0 0 3px #ffeeaa, 0 0 0 4px #ffbb11;
 }
 
-.link-password {
+.linkPassword {
   display: inline-block;
   color: #666666;
 }
 
-.link-password::after {
+.linkPassword::after {
   display: block;
   content: '';
   width: 100%;

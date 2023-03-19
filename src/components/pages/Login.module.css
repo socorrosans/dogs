@@ -1,4 +1,4 @@
-.login-content {
+.loginContent {
   min-height: 100vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -7,12 +7,12 @@
   column-gap: 2rem;
 }
 
-.login-data {
+.loginData {
   max-width: 30rem;
   padding: 1rem;
 }
 
-.login-banner {
+.loginBanner {
   display: inline-block;
   background: url("../../assets//login.jpg") no-repeat center/cover;
   width: 50vw;
@@ -20,15 +20,15 @@
 }
 
 @media(max-width: 40rem){
-  .login-content {
+  .loginContent {
     grid-template-columns: 1fr;
   }
 
-  .login-banner {
+  .loginBanner {
     display: none;
   }
 
-  .login-data {
+  .loginData {
     max-width: initial;
   }
 }

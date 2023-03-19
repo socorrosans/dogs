@@ -1,12 +1,4 @@
-.header {
-  width: 100%;
-  background: #ffffff;
-  position: fixed;
-  box-shadow: 1px 1px rgba(0, 0, 0, 10%);
-  top: 0;
-}
-
-.header .nav {
+.nav {
   max-width: 50rem;
   height: 4rem;
   display: flex;

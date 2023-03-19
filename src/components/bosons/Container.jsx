@@ -1,7 +1,7 @@
-import './container.css';
+import styles from './Container.module.css';
 
 export default function Container(props){
   return (
-    <main className="container-main">{props.children}</main>
+    <main className={styles.containerMain}>{props.children}</main>
   )
 }

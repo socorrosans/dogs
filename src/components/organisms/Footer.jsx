@@ -1,12 +1,12 @@
 import {Logo} from '../molecules';
 import {Text} from '../atoms';
-import './footer.css';
+import styles from './Footer.module.css';
 
 export default function Footer(){
   return(
-    <footer className="footer">
+    <footer className={styles.footer}>
       <Logo color="#764701"/>
-      <Text content="Dogs. Alguns direitos reservados." classname="copyright"/>
+      <Text content="Dogs. Alguns direitos reservados." classname={styles.copyright}/>
     </footer>
   )
 }

@@ -1,8 +1,8 @@
-import './grid.css';
+import styles from './Grid.module.css';
 
 export default function Grid(props){
   return(
-    <section className="grid-home">
+    <section className={styles.gridHome}>
       {props.children}
     </section>
   )

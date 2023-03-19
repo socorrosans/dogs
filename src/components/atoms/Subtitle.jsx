@@ -1,7 +1,7 @@
-import './subtitle.css';
+import styles from './Subtitle.module.css';
 
 export default function Subtitle({name}){
   return(
-    <h2 className="subtitle">{name}</h2>
+    <h2 className={styles.subtitle}>{name}</h2>
   )
 }

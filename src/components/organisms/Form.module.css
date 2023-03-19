@@ -1,21 +1,21 @@
-.form-login {
+.formLogin {
   padding-block: 1rem;
   margin-bottom: 1rem;
 }
 
-.form-login h1 {
+.formLogin h1 {
   margin-block: 1rem;
 }
 
-.form-login label {
+.formLogin label {
   display: inline-block;
   margin-bottom: 0.5rem;
 }
 
-.form-login input {
+.formLogin input {
   margin-bottom: 0.5rem;
 }
 
-.form-login button {
+.formLogin button {
   margin-top: 16px;
 }

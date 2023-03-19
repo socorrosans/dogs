@@ -2,7 +2,7 @@ import {UserData} from '../molecules';
 import {Button, Title} from '../atoms';
 import {api} from '../../service/api';
 import { useState } from 'react';
-import './form.css';
+import styles from './Form.module.css';
 
 export default function Form(){
 
@@ -29,7 +29,7 @@ export default function Form(){
   const submitData = (event) => {event.preventDefault(); fetchData()};
 
   return(
-    <form className="form-login" onSubmit={submitData}>
+    <form className={styles.formLogin} onSubmit={submitData}>
       <Title name="Login"/>
       <UserData name="Usuário" labelFor="user" inputType="text" onchange={getUser}/>
       <UserData name="Senha" labelFor="password" inputType="password" onchange={getPassword}/>
