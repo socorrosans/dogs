@@ -17,5 +17,13 @@
 }
 
 .formLogin button {
-  margin-top: 16px;
+  margin-block: 1rem;
+}
+
+.formLogin span {
+  display: block;
+  color: #f31;
+  font-size: 0.875rem;
+  padding: 0;
+  margin-bottom: 0.3125rem;
 }
