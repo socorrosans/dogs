@@ -1,27 +1,37 @@
 import {UserData} from '../molecules';
 import {Button, Title} from '../atoms';
-import {api} from '../../service/api';
 import { useSelector } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
+import { TOKEN_POST, USER_GET } from '../../service/api';
+import { useEffect } from 'react';
 import styles from './Form.module.css';
 
 export default function Form(){
 
   const {user, password} = useSelector((state) => state.user);
+  const navigate = useNavigate();
 
   async function fetchData(){
     if(user && password){
-      await fetch(`${api}/jwt-auth/v1/token`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          username: user,
-          password: password,
-        })
-      }).then(response => response.json())
-        .then(json => localStorage.token = json.token)
+      const {url, options} = TOKEN_POST({username: user, password: password});
+      const response = await fetch(url, options);
+      const json = await response.json();
+
+      if(json.token) localStorage.setItem('token', json.token);
+      if(localStorage.token) navigate('/conta');
+      getUser(json.token);
     }
+  }
+
+  useEffect(() => {
+    const token = localStorage.getItem('token');
+    if(token) getUser(token);
+  }, []);
+
+  async function getUser(token){
+    const {url, options} = USER_GET(token);
+    const response = await fetch(url, options);
+    const json = await response.json();
   }
 
   const submitData = (event) => {event.preventDefault(); fetchData();};
